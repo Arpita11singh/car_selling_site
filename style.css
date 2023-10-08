@@ -1,0 +1,178 @@
+/* Reset some default styles for better styling control */
+body, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: black;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* header h1:hover {
+    text-shadow: 10px 10px 10px rgba(195, 191, 191, 0.5); /* Apply a shadow on hover */
+/* }  */
+
+
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 3px; /* Increase letter spacing for a bold look */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Choose a font suitable for a car dealer site */
+}
+
+
+/* Define the rotation animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply the animation to the logo */
+.logo img {
+    max-width: 100px;
+    height: auto;
+    animation: spin 4s linear infinite; /* Adjust the duration (4s) as needed */
+}
+.logo:hover {
+    
+    transform: scale(1.1);/* Change the background color on hover */
+}
+
+
+/* Navigation styles */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: width 0.3s ease-in-out;
+}
+
+.search-bar input[type="text"]:focus {
+    width: 250px; /* Adjust the width as needed */
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.search-bar button:hover {
+    background-color: #555; /* Adjust the color as needed */
+    color: #fff;
+}
+
+/* Filter options styles */
+.filter-options {
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.filter-options:hover {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+
+.filter-options label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.filter-options select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Add this CSS for the Buy button animation */
+/* Style the Buy button */
+.buy-button {
+    padding: 10px 20px;
+    background-color: #9fa52b; /* Set your desired background color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.buy-button:hover {
+    background-color: #0056b3; 
+    transform: scale(1.1);/* Change the background color on hover */
+}
+
+/* Car listings styles */
+.car-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.car-list-item {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.car-list-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow on hover */
+}
+
+.car-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.car-details {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Footer styles */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
